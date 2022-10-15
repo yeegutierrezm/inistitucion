@@ -19,4 +19,6 @@ Solucion:
   - Templates
 - Base de datos (Se trabaja con db.sqlite)
 
-Nota: Aun falta terminarlo
+## A futuro
+
+1. La idea es Tener la base de datos Estudiante y Materia de forma independiente, para luego lograr incribir a un estudiante en una materia, y despues realizar las respecitvas calificaciones.
