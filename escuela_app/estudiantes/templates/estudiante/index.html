@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block titulo %} Lista de EstudiantesEstudiantes {% endblock %}
+
+{% block contenido %} 
+ 
+<div class="card">
+    <div class="card-header">
+        <a name="" id="" class="btn btn-primary" href="{% url 'crear_estudiante'%}" role="button"> agregar nuevo estudiante</a> 
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Estudiantes</h4>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                </tr>     
+            </thead>
+
+            <tbody>
+                {% for estudiante in estudiante %}
+                <tr>
+                    <td>{{ estudiante.id_e }}</td>
+                    <td>{{ estudiante.nombre }}</td>
+                    <td>{{ estudiante.edad }}</td>
+                    <td> <a name="" id="" class="btn btn-info" href="{% url 'editar_estudiante'%}" role="button">Editar</a> 
+                        | 
+                        <a name="" id="" class="btn btn-danger" href="{% url 'crear_materia'%}" role="button">Borrar</a> </td>
+                </tr>     
+                {% endfor %}
+            </tbody>
+        </table>          
+    </div>
+</div>
+
+{% endblock %}
