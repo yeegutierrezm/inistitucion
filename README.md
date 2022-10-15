@@ -1,4 +1,4 @@
-# inistitucion
+# institucion
 
 ## Resumen 
 **Implementacion**: lenguaje python con el framework Django
